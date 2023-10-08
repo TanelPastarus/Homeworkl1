@@ -30,7 +30,7 @@
       margin: 0;
       padding: 0;
       list-style: none;
-       /* 
+/* 
          list-style: none = No marker is shown 
        /
       }
@@ -170,3 +170,19 @@ th {
 .logo {
     margin-left: auto;
       }
+
+.button {
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #333333;
+}
+
+.container{
+    margin: 30% auto;
+    display: block;
+    width: 500px;
+    text-align: center;
+}
+.container input {
+    margin-bottom:15px
+}
