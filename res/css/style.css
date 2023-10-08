@@ -2,7 +2,8 @@
     font-family: sans-serif;
     box-sizing: border-box;
 }
-  body {
+
+body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -21,45 +22,42 @@
     color: #fff; /* Text color */
     text-align: center; /* Center the text horizontally */
     padding: 10px;
- /* Add padding for spacing */
-    /* Optionally, you can add more styles like font size, etc. */
+/* Add padding for spacing */
+/* Optionally, you can add more styles like font size, etc. */
 }
 
-  
-  ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
 /* 
-         list-style: none = No marker is shown 
-       /
-      }
-  
-  a {
-      color: #34495e;
-      text-decoration: none;
-       / 
-         text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
-         Comment it out and check the result on the page.
-       /
-      }
-  
-  .logo {
-      margin: 0;
-      font-size: 1.1em;
+list-style: none = No marker is shown 
+/
+    }
+
+a {
+    color: #34495e;
+    text-decoration: none;
+    / 
+        text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
+        Comment it out and check the result on the page.
+    /
+    }
+
+.logo {
+    margin: 0;
+    font-size: 1.1em;
         }
-  
-  section {
-      padding: 10px 15px;
-      margin: 10px;
-      display: block;
-          / 
+
+section {
+    padding: 10px 15px;
+    margin: 10px;
+    display: block;
+        / 
             display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
          */
-  }
-
-
-  
+}
 
 .header {
     display: flex;
@@ -76,7 +74,7 @@
 
 .nav {
     margin-top: 5px;
-     }
+    }
 
 .nav a {
     padding: 10px 15px;
@@ -84,20 +82,20 @@
     display: inline;
     color: #34495e;
     font-size: .99em;
-       }
+    }
 
 /* Pseudo-class selector */
 .nav a:hover {
     background-color: #7ebeb6;
     color: #092747;
-             }
+            }
 /* 
-      Applies when the browser's width is 800px wide or wider: 
+    Applies when the browser's width is 800px wide or wider: 
     */
 
 /*
 @media (min-width: 800px) {
-    .header,
+.header,
     .nav {
         display: flex;
     }
@@ -111,7 +109,7 @@
 
 
     /* 
-     Applies when the browser's width is 1000px wide or wider: 
+    Applies when the browser's width is 1000px wide or wider: 
      */
 /*
 @media (min-width: 1000px) {
@@ -169,7 +167,7 @@ th {
 
 .logo {
     margin-left: auto;
-      }
+    }
 
 .button {
     text-decoration: none;
@@ -178,11 +176,21 @@ th {
 }
 
 .container{
+    padding: 20px;
     margin: 30% auto;
     display: block;
     width: 500px;
     text-align: center;
+    background-color: #a2ccea;
+    border: 6px solid #a2ccea;
+    border-radius: 10px;
+    margin-top: 20%;
+    margin-bottom: 20%;
 }
 .container input {
-    margin-bottom:15px
+    margin-bottom:20px
+}
+
+.container Postbody {
+    text-align: left;
 }
