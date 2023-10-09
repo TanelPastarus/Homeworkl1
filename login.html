@@ -7,19 +7,25 @@
     <title>Log in page</title>
 </head>
 <body>
+    <header class="header">
+        <p class="nav">
+            <a href="index.html">Home</a>
+        </p>
+        <a class="logo" href="#"><img src="res/images/pilt.png" width="50" height="50" alt="My picture"></a>
+    </header>
     <div class="container">
         <h1>Login</h1>
-        <section>
-            <label for="username"><b>Username</b></label>
+        <form action="index.html">
+            <label for="username"></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
             <br/>
 
-            <label for="password"><b>Password</b></label>
+            <label for="password"></label>
             <input type="password" placeholder="Enter Password" name="password" required> 
             <br/>
             
-            <a class="button" href="index.html">Login</a>
-        </section>
+            <input type="submit" id="button"/> 
+        </form>
     </div>
     <footer class="site-footer">
         &copy; Homework 1 Page

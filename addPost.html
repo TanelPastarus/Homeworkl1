@@ -15,17 +15,17 @@
     </header>
         <div class="container">
             <h1>Add post</h1>
-            <form>
+            <form action="index.html">
                 <label for="postBody"><b>Post body</b></label>
                 <br>
-                <textarea name="postBody" id="postBody" cols="22" rows="8" placeholder="Write something here"></textarea>
+                <textarea name="postBody" id="postBody" cols="22" rows="8" placeholder="Write something here" required></textarea>
                 <br>
                 <label for="SelectF"><b>Select File</b></label>
                 <br>
                 <input type="file" id="selectFile" placeholder="" name="SelectFile"> 
                 <br>
                 
-                <a class="button" href="index.html">Create post</a>
+                <input type="submit" id="button" value="Create Post"/>
             </form>
         </div>
         <footer class="site-footer">
