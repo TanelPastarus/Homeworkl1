@@ -12,52 +12,15 @@ body {
     min-height: 100%;
 }
 
-.content-wrapper {
-    flex: 1;
-}
-
 .site-footer {
     position: relative;
-    background-color: #333; /* Footer background color */
-    color: #fff; /* Text color */
-    text-align: center; /* Center the text horizontally */
+    background-color: #333; 
+    color: #fff;
+    text-align: center; 
     padding: 10px;
-/* Add padding for spacing */
-/* Optionally, you can add more styles like font size, etc. */
+
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-/* 
-list-style: none = No marker is shown 
-/
-    }
-
-a {
-    color: #34495e;
-    text-decoration: none;
-    / 
-        text-decoration: none - is used here to not show underlining under an anchor element when a mouse hovers over it.
-        Comment it out and check the result on the page.
-    /
-    }
-
-.logo {
-    margin: 0;
-    font-size: 1.1em;
-        }
-
-section {
-    padding: 10px 15px;
-    margin: 10px;
-    display: block;
-        / 
-            display: block - displays an element as a block element. It starts on a new line, and takes up the whole width
-         */
-}
 
 .header {
     display: flex;
@@ -73,7 +36,7 @@ section {
 
 .nav {
     margin-top: 5px;
-    }
+}
 
 .nav a {
     padding: 10px 15px;
@@ -82,44 +45,13 @@ section {
     color: #34495e;
     font-size: .99em;
     text-decoration: none;
-    }
+}
 
 /* Pseudo-class selector */
 .nav a:hover {
     background-color: #7ebeb6;
     color: #092747;
-            }
-/* 
-    Applies when the browser's width is 800px wide or wider: 
-    */
-
-/*
-@media (min-width: 800px) {
-.header,
-    .nav {
-        display: flex;
-    }
-    .header {
-        
-        align-items: center;
-    }
 }
-*/
-
-
-
-    /* 
-    Applies when the browser's width is 1000px wide or wider: 
-     */
-/*
-@media (min-width: 1000px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-*/
-
 
 .posts {
     position: relative;
@@ -131,36 +63,29 @@ section {
     display: grid;
     grid-template-columns: auto;
     gap: 10px;
-
 }
 
+/* Descendant selector*/
 .posts p {
     padding-left: 20px;
     color: black;
     text-align: left;
 }
 
-header + section {
-    padding-top: 100px;
+
+/* Child selector*/
+div > p {
+    text-shadow: 1px 1px 2px yellow;
 }
 
-/*
-p:hover {
-    text-shadow: #092747 2px 2px;
-}
-*/
-
-section div strong {
-    color: red;
-}
-
-th {
-    color:darkgoldenrod;
+/*::first-letter pseudo-element*/
+.posts p::first-letter {
+    font-size: x-large;
 }
 
 .logo {
     margin-left: auto;
-    }
+}
 
 #button {
     border-radius: 10px;
@@ -171,10 +96,11 @@ th {
     color: white;
 }
 
-.container{
+/* Adjacent sibling selector*/
+.header + .container{
+    display: block;
     padding: 20px;
     margin: 30% auto;
-    display: block;
     width: 500px;
     text-align: center;
     background-color: #a2ccea;
@@ -182,12 +108,9 @@ th {
     border-radius: 10px;
     margin-top: 10%;
 }
+
 .container input {
     margin-bottom:20px
-}
-
-.container Postbody {
-    text-align: left;
 }
 
 .pic {
@@ -195,7 +118,7 @@ th {
     padding-top: 5px;
 }
 
-.posts .date {
+.date {
     position: absolute; 
    top: 10px; 
    right: 10px; 
@@ -204,10 +127,15 @@ th {
    font-size: 12px;
 }
 
-.posts .pic2 img{
+.posts .pic2 img {
     max-width: 100%;
-   height: auto; /* Ensures the image scales proportionally */
-   display: block; /* Removes extra spacing around the image */
-   margin: 0 auto; /* Center the image horizontally if needed */
+   height: auto; 
+   display: block; 
+   margin: 0 auto;
    padding: 20px;
+}
+
+/* General Sibling selector */
+p ~ .date {
+    font-style: italic;
 }
