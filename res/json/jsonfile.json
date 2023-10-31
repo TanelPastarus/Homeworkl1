@@ -1,0 +1,33 @@
+[
+    {
+        "date": "Oct 15, 2022",
+        "profilepic": "res/images/pilt.png",
+        "text": "Raekoja square, Tartu",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/Tartu_pilt.jpg"
+    },
+    {
+        "date": "Dec 15, 2012",
+        "profilepic": "res/images/pilt.png",
+        "text": "First post from the year 2012!",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "date": "Mar 2, 2014",
+        "profilepic": "res/images/pilt.png",
+        "text": "Where am I?",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "date": "June 25, 2025",
+        "profilepic": "res/images/pilt.png",
+        "text": "Hello from the future!!!",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "date": "August 7, 2023",
+        "profilepic": "res/images/pilt.png",
+        "text": "This is a long text meant to fix any errors, should they appear. I really do not know what to write here, but I will try my best.",
+        "likepic": "res/images/like.png"
+    }
+]
