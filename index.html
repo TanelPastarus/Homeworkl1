@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="res/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="src/js/script.js"></script>
+    <link rel="stylesheet" href="res/css/style.css">
     <title>Main page</title>
   </head>
   <body>
@@ -12,22 +13,19 @@
         <p class="nav">
             <a href="index.html">Home</a>|<a href="addPost.html">addPost</a>
         </p>
-        <a class="logo" href=dropdown()>
-          <img src="res/images/pilt.png" width="50" height="50" alt="My picture">
+        <a class="logo">
+          <img onclick="myFunction()" class="dropimg" src="res/images/pilt.png" width="50" height="50" alt="My picture">
         </a>
     </header>
-    <div id="dropdown-menu">
-      <ul>
-        <li>John Doe</li>
-        <li>john.doe@ut.ee</li>
-        <li>logout</li>
-      </ul>
-    </div>
+    <div class="dropdown">
+      <div id="dropdownItms" class="drop-content">
+        <p>John Doe</p>
+        <p>john.doe@ut.ee</p>
+        <p>logout</p>
+      </div>
 
     <main id = "main-content">
-
       <!--
-      
       <div class="posts">
         <a class="pic"><img src="res/images/pilt.png" width="50" height="50" alt="My picture"></a>
         <div class ="pic2"><img src="res/images/Tartu_pilt.jpg" alt="Picture of Tartu"></div>
@@ -63,13 +61,10 @@
         <div class="date">August 7, 2023</div>
         <div class ="like"><img src="res/images/like.png" width="70" height="50" alt="Picture of Tartu"></div>
       </div>
-      
       -->
     </main>
- 
     <footer class="site-footer">
         &copy; Homework 1 Page
     </footer>
-
   </body>
 </html>

@@ -29,5 +29,12 @@
         "profilepic": "res/images/pilt.png",
         "text": "This is a long text meant to fix any errors, should they appear. I really do not know what to write here, but I will try my best.",
         "likepic": "res/images/like.png"
+    },
+    {
+        "date": "November 25, 2023",
+        "profilepic": "res/images/pilt.png",
+        "text": "Happy birthday Dixie.",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/dixie.jpg"
     }
 ]
