@@ -1,15 +1,19 @@
 window.onload = function() {
 
-    // https://www.npoint.io/docs/48609dec2ba5b143263c
-    // https://api.npoint.io/48609dec2ba5b143263c
-    // res/json/jsonfile.json
-    fetch('https://api.npoint.io/48609dec2ba5b143263c')
+    // Old JSON site: https://www.npoint.io/docs/48609dec2ba5b143263c
+    // Old JSON site: https://api.npoint.io/48609dec2ba5b143263c
+    // New JSON editor: https://extendsclass.com/jsonstorage/811ab9d58f9f
+    // New URI to acess JSON bin: https://json.extendsclass.com/bin/811ab9d58f9f
+    // Local JSON: res/json/jsonfile.json
+    
+    fetch('https://json.extendsclass.com/bin/811ab9d58f9f')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
             for (let i = 0; i < json.length; i++) {
                 const mainElement = document.getElementById("main-content");
                 let div = document.createElement("div");
+                let divAuth = document.createElement("div")
                 let divDate = document.createElement("div");
                 let a = document.createElement("a");
                 let img = document.createElement("img");
@@ -18,14 +22,17 @@ window.onload = function() {
                 let imgLike = document.createElement("img");
 
                 div.className="posts";
-                a.className = "pic";
+                divAuth.className = "author";
                 divDate.className = "date";
+                a.className = "pic";
                 divLike.className = "like";
 
                 img.src = json[i].profilepic;
+                divAuth.innerText = json[i].author;
+                divDate.innerText = json[i].date;
                 imgLike.src = json[i].likepic;
                 p.innerText = json[i].text;
-                divDate.innerText = json[i].date;
+                
 
                 img.width = 50;
                 img.height = 50;
@@ -46,6 +53,7 @@ window.onload = function() {
                 }
 
                 divLike.appendChild(imgLike);
+                div.appendChild(divAuth)
                 div.appendChild(divDate);
                 div.appendChild(divLike);
                 mainElement.appendChild(div);
@@ -70,15 +78,22 @@ function myFunction() {
     document.getElementById("dropdownItms").classList.toggle("show");
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropimg')) {
-        var dropdowns = document.getElementsByClassName("drop-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-            }
-        }
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
     }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
 }

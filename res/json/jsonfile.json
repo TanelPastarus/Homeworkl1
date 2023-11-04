@@ -1,5 +1,51 @@
 [
     {
+        "author": "Emily Johnson",
+        "date": "Dec 15, 2012",
+        "profilepic": "res/images/pilt.png",
+        "text": "First post from the year 2012!",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "author": "David Smith",
+        "date": "Oct 20, 2013",
+        "profilepic": "res/images/pilt.png",
+        "text": "LMAO guys, look at this meme!",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/doge.jpg"
+    },
+    {
+        "author": "Sarah Davis",
+        "date": "Mar 2, 2014",
+        "profilepic": "res/images/pilt.png",
+        "text": "Where am I?",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "author": "Michael Wilson",
+        "date": "february 10, 2017",
+        "profilepic": "res/images/pilt.png",
+        "text": "He is so smooth with it!",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/saltbae.jpg"
+    },
+    {
+        "author": "Olivia Brown",
+        "date": "November 25, 2018",
+        "profilepic": "res/images/pilt.png",
+        "text": "Happy birthday Dixie.",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/dixie.jpg"
+    },
+    {
+        "author": "James Anderson",
+        "date": "June 6, 2020",
+        "profilepic": "res/images/pilt.png",
+        "text": "Today, I finally achieved my lifelong dream of climbing to the summit of Mount Everest. The journey was tough, but the feeling of accomplishment is absolutely worth it!",
+        "likepic": "res/images/like.png"
+    },
+    {
+        "author": "Sophia Lee",
         "date": "Oct 15, 2022",
         "profilepic": "res/images/pilt.png",
         "text": "Raekoja square, Tartu",
@@ -7,34 +53,33 @@
         "picture": "res/images/Tartu_pilt.jpg"
     },
     {
-        "date": "Dec 15, 2012",
+        "author": "Daniel Martin",
+        "date": "July 3, 2023",
         "profilepic": "res/images/pilt.png",
-        "text": "First post from the year 2012!",
-        "likepic": "res/images/like.png"
+        "text": "Experience the future of driving with the all-new Volvo EX 30 - where innovation meets elegance on the open road. Deliveries will begin in the summer of 2024!",
+        "likepic": "res/images/like.png",
+        "picture": "res/images/EX30.jpg"
     },
     {
-        "date": "Mar 2, 2014",
-        "profilepic": "res/images/pilt.png",
-        "text": "Where am I?",
-        "likepic": "res/images/like.png"
-    },
-    {
-        "date": "June 25, 2025",
-        "profilepic": "res/images/pilt.png",
-        "text": "Hello from the future!!!",
-        "likepic": "res/images/like.png"
-    },
-    {
+        "author": "Emma Taylor",
         "date": "August 7, 2023",
         "profilepic": "res/images/pilt.png",
         "text": "This is a long text meant to fix any errors, should they appear. I really do not know what to write here, but I will try my best.",
         "likepic": "res/images/like.png"
     },
     {
-        "date": "November 25, 2023",
+        "author": "William White",
+        "date": "January 1, 2024",
         "profilepic": "res/images/pilt.png",
-        "text": "Happy birthday Dixie.",
+        "text": "Happy new year!",
         "likepic": "res/images/like.png",
-        "picture": "res/images/dixie.jpg"
+        "picture": "res/images/aastavahetus.jpg"
+    },
+    {
+        "author": "Emily Johnson",
+        "date": "June 25, 2025",
+        "profilepic": "res/images/pilt.png",
+        "text": "Hello from the future!!!",
+        "likepic": "res/images/like.png"
     }
 ]
