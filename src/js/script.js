@@ -10,7 +10,7 @@ window.onload = function() {
     fetch('res/json/jsonfile.json')
         .then((response) => response.json())
         .then(json => {
-            console.log(json);
+            //console.log(json);
             for (let i = 0; i < json.length; i++) {
                 const mainElement = document.getElementById("main-content");
                 let div = document.createElement("div");
@@ -68,10 +68,6 @@ window.onload = function() {
             document.body.appendChild(errDiv);
             })
         .finally(() => {
-            let footer = document.createElement("footer");
-            date = new Date().toLocaleString()
-            footer.innerText = date;
-            document.body.appendChild(footer);
             })
 }
 

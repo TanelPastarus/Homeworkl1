@@ -149,6 +149,8 @@ p ~ .date {
     font-style: italic;
 }
 
+
+/* New code for homework 2 */
 .drop-content {
     width: 20%;
     border-radius: 3px;
@@ -157,20 +159,13 @@ p ~ .date {
     display: none;
     position: absolute;
     background-color: #ddd;
-    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border: 1px solid #746161;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+.show {
     display: block;
-}
-
-.show {display: block;
 }
 
 #myBtn {
