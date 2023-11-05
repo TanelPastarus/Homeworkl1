@@ -75,6 +75,7 @@ body {
 /* Child selector*/
 div > p {
     font-family: arial;
+    
 }
 
 /*::first-letter pseudo-element*/

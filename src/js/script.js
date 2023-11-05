@@ -6,7 +6,8 @@ window.onload = function() {
     // New URI to acess JSON bin: https://json.extendsclass.com/bin/811ab9d58f9f
     // Local JSON: res/json/jsonfile.json
     
-    fetch('https://json.extendsclass.com/bin/811ab9d58f9f')
+    //fetch('https://json.extendsclass.com/bin/811ab9d58f9f')
+    fetch('res/json/jsonfile.json')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
@@ -74,13 +75,11 @@ window.onload = function() {
             })
 }
 
-function myFunction() {
+function menuFunction() {
     document.getElementById("dropdownItms").classList.toggle("show");
 }
 
-let mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
+// When the page is scrolled down by 20px show the "up" button
 window.onscroll = function() {
     scrollFunction()
 };
@@ -93,7 +92,7 @@ function scrollFunction() {
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// When the button is clicked, scroll to the top of the page
 function topFunction() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 }
